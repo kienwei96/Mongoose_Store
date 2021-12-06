@@ -17,7 +17,7 @@ const newProducts = [
     {
       name: "Bins",
       description: "A stack of colorful bins for your beans and bones.",
-      img: "http://www.clipartbest.com/cliparts/9cz/rMM/9czrMMBcE.jpeg",
+      img: "https://cdn3.bigcommerce.com/s-a6pgxdjc7w/products/1075/images/967/416130__50605.1467418920.1280.1280.jpg?c=2",
       price: 7000,
       qty: 1,
     },
@@ -39,7 +39,7 @@ const newProducts = [
     {
       name: "Chair",
       description: "A stack of colorful bins for your beans and bones.",
-      img: "http://www.clipartbest.com/cliparts/9cz/rMM/9czrMMBcE.jpeg",
+      img: "https://cdn3.bigcommerce.com/s-a6pgxdjc7w/products/1075/images/967/416130__50605.1467418920.1280.1280.jpg?c=2",
       price: 70,
       qty: 3,
     },
@@ -53,7 +53,7 @@ const newProducts = [
     {
       name: "Chair",
       description: "A stack of colorful bins for your beans and bones.",
-      img: "http://www.clipartbest.com/cliparts/9cz/rMM/9czrMMBcE.jpeg",
+      img: "https://cdn3.bigcommerce.com/s-a6pgxdjc7w/products/1075/images/967/416130__50605.1467418920.1280.1280.jpg?c=2",
       price: 70,
       qty: 3,
     },
