@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add new Product</title>
+    <link rel="stylesheet" href="/public/assets/css/new.css">
+  </head>
+  <body>
+
+
+<form action="/home" method="post">
+
+    <h1>Add new product</h1>
+  
+    <fieldset>
+      <legend><span class="number">1</span> Your basic info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="i.e, Bike">
+  
+      <label for="mail">Description:</label>
+      <input type="text" id="description" name="description" placeholder="i.e, This is high speed, two-wheel bike...">
+  
+      <label for="img">Image URL:</label>
+      <input type="text" id="img" name="img" placeholder="http://bluelips.com/prod_images_large/bones1.jpg">
+  
+      <label>Price:</label>
+      <input type="text" id="price" name="price" placeholder="i.e, 100">
+
+      <label>Quantity:</label>
+      <input type="number" id="qty" name="qty" placeholder="i.e, 5">
+    </fieldset>
+    
+    <button type="submit">Add</button>
+    
+  
+  </form>
+
+  <a href="/home"><button style="width:400px; margin-left: 580px;">Back</button></a>
+  
+
+  </body>

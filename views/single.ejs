@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title><%=data.name%></title>
+    <link rel="stylesheet" href="/public/assets/css/single.css">
+  </head>
+  <body>
+    <div class="card">
+        <img class="image" src=<%=data.img%>>
+        <div class="row1">
+            <div class="name"><h1><%=data.name%></h1></div>
+            <div class="price"> <p class="price">$<%=data.price%></p></div>
+            <% if(data.qty>0) { %>
+              <div class="price"> <p class="price"><%=data.qty%> In Stock</p></div>
+            <% } %>
+  
+        
+        </div>
+        <div class="description">
+            <p><%=data.description%></p>
+        </div>
+        <% if(data.qty>0) { %>
+          <form action="/home/<%=index%>/buy?_method=PUT" method="POST">
+            <p><button>Buy</button></p>
+          </form>
+        <% } else { %>
+          <p class="italic">Out of stock</p>
+        <% } %>
+
+        <a href="/home"><p><button>Back</button></p></a>
+        
+      </div>
+<!-- Footer
+          <div class="footer">
+              <p class="copyright">Copyright &copy; 2021 - Red Store</p>
+          </div> -->
+    
+
+    </body>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>New Captain</title>
+    <link rel="stylesheet" href="/public/assets/css/list.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    
+
+    <div class="sidenav">
+      <a href="/home">
+        <button class="mbtn"><i class="fa fa-list icon" aria-hidden="true"></i> Back </button>
+      </a>
+    </div>
+    <div class="content-area">
+      <div class="mobilebar">
+        <div class="logo sml">iX</div>
+        <div class="mbh">
+        <button class="mnubtn" onclick="slideMenu()"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        </div>
+      </div>
+      <div class="page-title">Inventory</div>
+      <div class="page-desc">View and manage your stock</div>
+       <!---------------- product item start--------------- -->
+      <% for (let i = 0; i < data.length; i++) { %>
+      <div class="content-bar">
+        <div class="itemnum">#000<%=i%></div>
+        <div class="itemtitle"><%=data[i].name%></div>
+        <div class="itemprice">$<%=data[i].price%></div>
+        <div class="itemstock"><%=data[i].qty%> In Stock</div>
+        <div class="btncontainer">
+          <form action='/home/<%=data[i]._id%>/delete?_method=DELETE' method="POST">
+              <button class="cbbtn"><i class="fa fa-trash" aria-hidden="true"></i></button>
+         </form>
+        <a href="/home/<%=data[i].id%>/edit">
+          <button class="cbbtn"><i class="fa fa-pencil" aria-hidden="true"></i></button>
+        </a>
+        </div>
+      </div>
+      <% } %>
+       <!---------------- product div start--------------- -->
+       
+    </div>
+
+
+    </body>

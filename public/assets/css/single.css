@@ -1,0 +1,60 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    font-family: Trebuche MS;
+  }
+  
+  .price {
+    color: black;
+    font-size: 22px;
+  }
+  
+  .card button {
+    border: none;
+    outline: 0;
+    padding: 15px;
+    color: white;
+    
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  .card button:hover {
+    opacity: 1;
+    background-color: black;
+  }
+
+  .footer {
+      margin-top: 160px;
+    background: #000;
+    color: #8a8a8a;
+    font-size: 20px;
+    padding: 30px 0 20px;
+  }
+  
+  .footer p {
+    color: #8a8a8a;
+  }
+
+  .row1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+  }
+
+  .description {
+    font-size: 20px;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+
+  .italic {
+    font-style: italic;
+  }

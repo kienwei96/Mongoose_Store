@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Add new Product</title>
+    <link rel="stylesheet" href="/public/assets/css/new.css">
+  </head>
+  <body>
+
+
+<form id="editForm" action="/home/<%=index%>/edit?_method=PUT" method="POST">
+
+    <h1>Edit product</h1>
+  
+    <fieldset>
+      <legend><span class="number">1</span> Please edit below</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" value=<%=data.name%>>
+  
+      <label for="mail">Description:</label>
+      <input type="text" id="description" name="description" value="<%=data.description%>">
+
+      <label for="img">Image URL:</label>
+      <input type="text" id="img" name="img" value=<%=data.img%>>
+  
+      <label>Price:</label>
+      <input type="number" id="price" name="price" value=<%=data.price%>>
+
+      <label>Quantity:</label>
+      <input type="number" id="qty" name="qty" value=<%=data.qty%>>
+    </fieldset>
+    
+    <button type="submit">Add</button>
+  
+  </form>
+  <a href="/home"><button style="width:400px; margin-left: 580px;">Back</button></a>
+
+  </body>
